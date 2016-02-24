@@ -16,6 +16,9 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+        debug {
+            it.buildConfigField 'String', 'OPEN_WEATHER_MAP_API_KEY', '"e810894732d001ea8af160a7e1c4185c"';
+        }
     }
 }
 
